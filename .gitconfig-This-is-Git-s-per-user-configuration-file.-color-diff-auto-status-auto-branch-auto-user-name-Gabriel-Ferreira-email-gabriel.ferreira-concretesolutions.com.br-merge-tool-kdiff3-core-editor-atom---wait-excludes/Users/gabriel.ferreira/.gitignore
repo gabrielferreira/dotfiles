@@ -1,0 +1,29 @@
+# This is Git's per-user configuration file.
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[user]
+  name = Gabriel Ferreira
+  email = gabriel.ferreira@concretesolutions.com.br
+[merge]
+  tool = kdiff3
+[core]
+  editor = atom --wait
+  excludes = /Users/gabriel.ferreira/.gitignore_global
+[alias]
+  s = status
+  c = commit
+  ca = commit -a
+  co = checkout
+  p = push
+  pl = pull
+  d = diff
+  b = branch
+  f = fetch
+[push]
+  default = tracking
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
